@@ -1,0 +1,6 @@
+mysql-connector-python
+tkcalendar
+tk
+pandas
+numpy
+matplotlib

@@ -1,0 +1,17 @@
+{
+    "mysql" : {
+        "user" : "root",
+        "password" : "",
+        "database" : "wedding_planner"
+    },
+    "admin" : {
+        "username" : "",
+        "password" : ""
+    },
+    "bank" : {
+        "name" : "",
+        "ac" : "",
+        "ifsc" : "",
+        "upi" : ""
+    }
+}
