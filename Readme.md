@@ -42,4 +42,6 @@ It provides easy access to the data and enables the management to work more effi
 
 We are currently working on a Web App with similar functionality. Stay Tuned! ✨
 
-⭐ By [Jaguar000212](https://www.github.com/wizard-i)
+---
+
+⭐ From [Jaguar000212](https://www.github.com/wizard-i)
