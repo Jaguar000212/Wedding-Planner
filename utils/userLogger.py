@@ -11,7 +11,7 @@ def initLogger():
         TempData = json.load(f)
     helpers.clear()
     print(f"Welcome to this interactive Wedding Planner, {TempData['name']}")
-    print(f"Continue for the wedding of your dream...")
+    print("Continue for the wedding of your dream...")
     print("NOTE : Your progress is unsaved until you confirm your booking.\nMake sure to confirm the booking before closing the program,\nor you may have to start over")
     time.sleep(3)
     getStatus()
@@ -111,7 +111,7 @@ def showBooking():
                 showBooking()
 
             elif option == 2:
-                print(f"\n########### Bank A/c Details ############")
+                print("\n########### Bank A/c Details ############")
                 print(f"Name ------------------- {config['bank']['name']}")
                 print(f"Account Number --------- {config['bank']['ac']}")
                 print(f"IFSC Code -------------- {config['bank']['ifsc']}")
@@ -529,7 +529,7 @@ def showData():
         TempData = json.load(f)
     helpers.clear()
     option = None
-    print(f"######## Your Selected Options ########\n")
+    print("######## Your Selected Options ########\n")
     print(f"City ----------------- {TempData['city']}")
 
     if TempData['pack'] != "0":
@@ -640,8 +640,8 @@ def genBill():
         total = cost + 5000.00
         rtrn = (cost, 00.00)
     print(f"Estimated Charges = ₹ {float(cost)}")
-    print(f"Service Charges = ₹ 5000.00")
-    print(f"Tax and Other Charges = ₹ 00.00")
+    print("Service Charges = ₹ 5000.00")
+    print("Tax and Other Charges = ₹ 00.00")
     print(f"Estimated Total = ₹ {total}")
 
     print("\n#### CONDITIONS ####\n1. Total stated here is subject to change depending upon the final order.\n3. Amount to be paid for booking is 25% of Estimated Total.\n3. 50% of the payment should be done 10 days before the final day of wedding and rest should be paid before the same day.\n4. A Personal Assisstant will be appointed to you after the booking for further consultion.\n5. You won't be able to edit your changes after booking.\n\n")
@@ -731,7 +731,7 @@ def payBill(amt):
             getStatus()
 
     elif option == 2:
-        print(f"\n########### Bank A/c Details ############")
+        print("\n########### Bank A/c Details ############")
         print(f"Name ------------------- {config['bank']['name']}")
         print(f"Account Number --------- {config['bank']['ac']}")
         print(f"IFSC Code -------------- {config['bank']['ifsc']}")

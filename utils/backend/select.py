@@ -360,8 +360,8 @@ def selBooked():
     else:
         total = cost + 5000.00
     print(f"Estimated Charges = ₹ {float(cost)}")
-    print(f"Service Charges = ₹ 5000.00")
-    print(f"Tax and Other Charges = ₹ 00.00")
+    print("Service Charges = ₹ 5000.00")
+    print("Tax and Other Charges = ₹ 00.00")
     print(f"Estimated Total = ₹ {total}")
     print(f"Amount Paid = ₹ {data[-1]}")
 
