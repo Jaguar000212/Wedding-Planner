@@ -1,6 +1,7 @@
 from os import system, name
 from gui import *
 import json
+import sys
 from . import exceptions, adminLogger
 
 
@@ -37,7 +38,7 @@ def welcome():
         # AdminLoginGUI(back_func=welcome).mainloop()
         adminLogger.initLogger()
     elif option == 3:
-        quit()
+        sys.exit()
 
 
 def userWelcome():
