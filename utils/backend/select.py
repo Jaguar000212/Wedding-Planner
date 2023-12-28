@@ -518,4 +518,3 @@ def selAmount(sno=None):
 
     return (total, paid)
 
-# def selCityData():
