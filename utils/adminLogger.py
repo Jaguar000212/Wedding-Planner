@@ -314,7 +314,7 @@ def showVisualisation():
         data = backend.selAmount()
         plt.plot(data[0], marker = '*')
         plt.plot(data[1], marker = 'd')
-        plt.xticks([i for i in range(len(data[1]))])
+        plt.xticks(list(range(len(data[1]))))
         plt.legend(["Estimated Total", "Amount Paid"])
         plt.ylabel("Amount in ₹")
         plt.xlabel("User")
