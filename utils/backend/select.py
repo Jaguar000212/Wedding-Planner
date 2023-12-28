@@ -103,8 +103,7 @@ def selPackData():
     result = cursor.fetchone()
     if not result is None:
         return result
-    else:
-        return ("No Data Found", "Invalid Request. Get back and reselect the pack. Ensure to Enter correct SNo.", 00.00)
+    return ("No Data Found", "Invalid Request. Get back and reselect the pack. Ensure to Enter correct SNo.", 00.00)
 
 
 def selCustomData():

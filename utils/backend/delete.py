@@ -27,10 +27,9 @@ def deleteUser(username: str, password: str):
             cursor.execute(
                 "delete from user_data where username = %s and password = %s", (username, password))
             return True
-        else:
-            messagebox.showerror(
-                "Failed", "Username and Password do not match.")
-            return False
+        messagebox.showerror(
+            "Failed", "Username and Password do not match.")
+        return False
     else:
         messagebox.showerror("Failed", "User does not exist.")
         return False
