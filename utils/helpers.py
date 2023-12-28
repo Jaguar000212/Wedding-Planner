@@ -2,7 +2,7 @@ from os import system, name
 from gui import *
 import json
 import sys
-from . import exceptions, adminLogger
+from . import exceptions
 
 
 def welcome():

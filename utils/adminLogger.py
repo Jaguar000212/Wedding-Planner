@@ -1,6 +1,5 @@
 from . import helpers, exceptions, backend
 import matplotlib.pyplot as plt
-import numpy as np
 
 
 def initLogger():
