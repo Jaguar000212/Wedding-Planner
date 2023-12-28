@@ -100,7 +100,7 @@ def selPackData():
     cursor.execute(
         "select Name, Details, Cost from packs where SNo = %s", (int(TempData['pack']),))
     result = cursor.fetchone()
-    if not result is None:
+    if result is not None:
         return result
     return ("No Data Found", "Invalid Request. Get back and reselect the pack. Ensure to Enter correct SNo.", 00.00)
 
@@ -115,7 +115,7 @@ def selCustomData():
         cursor.execute("select Name, Cost from Venue where SNo = %s",
                        (int(TempData['venue']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
@@ -124,7 +124,7 @@ def selCustomData():
         cursor.execute(
             "select price_per_plate from Venue where SNo = %s", (int(TempData['venue']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             TempData['ppp'] = result[0]
         else:
             TempData['ppp'] = 00.00
@@ -138,7 +138,7 @@ def selCustomData():
         cursor.execute(
             "select Name, Cost from catering where SNo = %s", (int(TempData['caterer']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
@@ -147,7 +147,7 @@ def selCustomData():
         cursor.execute(
             "select price_per_plate from catering where SNo = %s", (int(TempData['caterer']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             TempData['ppp'] = result[0]
         else:
             if TempData['ppp'] == 0:
@@ -162,7 +162,7 @@ def selCustomData():
         cursor.execute("select Name, Cost from photographer where SNo = %s", (int(
             TempData['photographer']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
@@ -174,7 +174,7 @@ def selCustomData():
         cursor.execute("select Name, Cost from mua where SNo = %s",
                        (int(TempData['mua']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
@@ -186,7 +186,7 @@ def selCustomData():
         cursor.execute("select Name, Cost from live where SNo = %s",
                        (int(TempData['live']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
@@ -198,7 +198,7 @@ def selCustomData():
         cursor.execute("select Name, Cost from dj where SNo = %s",
                        (int(TempData['dj']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
@@ -210,7 +210,7 @@ def selCustomData():
         cursor.execute("select Name, Cost from entertainment where SNo = %s", (int(
             TempData['entertainment']),))
         result = cursor.fetchone()
-        if not result is None:
+        if result is not None:
             data.append(result)
         else:
             data.append(["Skipped", 00.00])
