@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def initLogger():
     helpers.clear()
-    print(f"Welcome to this interactive Wedding Planner, Sir")
+    print("Welcome to this interactive Wedding Planner, Sir")
     print("Select an option to get started.\n1. Databases\n2. Visualisation\n3. Show Users\n4. Show Bookings\n5. Show Feedbacks\n6. Log-out")
 
     option = None
