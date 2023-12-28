@@ -67,7 +67,7 @@ def updateVenue():
     while not rating:
         try:
             rating = int(input("Enter edited Rating : "))
-            if not rating in [1, 2, 3, 4, 5]:
+            if rating not in [1, 2, 3, 4, 5]:
                 raise exceptions.InvalidOption(
                     "Enter valid rating [1/2/3/4/5]")
         except exceptions.InvalidOption as e:
@@ -84,7 +84,7 @@ def updateVenue():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:
@@ -157,7 +157,7 @@ def updateCaterer():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:
@@ -170,7 +170,7 @@ def updateCaterer():
     while not rating:
         try:
             rating = int(input("Enter edited Rating : "))
-            if not rating in [1, 2, 3, 4, 5]:
+            if rating not in [1, 2, 3, 4, 5]:
                 raise exceptions.InvalidOption(
                     "Enter valid rating [1/2/3/4/5]")
         except exceptions.InvalidOption as e:
@@ -243,7 +243,7 @@ def updatePhotographer():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:
@@ -308,7 +308,7 @@ def updateMUA():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:
@@ -373,7 +373,7 @@ def updateLive():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:
@@ -438,7 +438,7 @@ def updateDJ():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:
@@ -550,7 +550,7 @@ def updateAssistant():
     while not availability:
         try:
             availability = int(input("Enter edited Availability : "))
-            if not availability in [1, 0]:
+            if availability not in [1, 0]:
                 raise exceptions.InvalidOption(
                     "Enter valid availability [1/2]")
         except exceptions.InvalidOption as e:

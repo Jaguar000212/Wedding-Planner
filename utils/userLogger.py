@@ -89,7 +89,7 @@ def showBooking():
                 try:
                     option = int(input(
                         "\nSelect you mode of payment.\n1. UPI\n2. Bank-Transfer\n3. Back\nSelect option : "))
-                    if not option in [1, 2, 3]:
+                    if option not in [1, 2, 3]:
                         option = None
                         raise exceptions.InvalidOption("Select 1, 2 or 3 only")
                 except ValueError:
@@ -688,7 +688,7 @@ def payBill(amt):
         try:
             option = int(input(
                 "Select you mode of payment.\n1. UPI\n2. Bank-Transfer\n3. Back\nSelect option : "))
-            if not option in [1, 2, 3]:
+            if option not in [1, 2, 3]:
                 option = None
                 raise exceptions.InvalidOption("Select 1, 2 or 3 only")
         except ValueError:
@@ -716,7 +716,7 @@ def payBill(amt):
             try:
                 option = int(
                     input("Press 1 to share us your precious feedback or press 2 to skip : "))
-                if not option in [1, 2]:
+                if option not in [1, 2]:
                     option = None
                     raise exceptions.InvalidOption("Select 1 or 2")
             except ValueError:
@@ -755,7 +755,7 @@ def payBill(amt):
             try:
                 option = int(
                     input("\n\nPress 1 to share us your precious feedback or press 2 to skip : "))
-                if not option in [1, 2]:
+                if option not in [1, 2]:
                     option = None
                     raise exceptions.InvalidOption("Select 1 or 2")
             except ValueError:
