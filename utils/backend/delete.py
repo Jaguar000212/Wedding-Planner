@@ -30,9 +30,8 @@ def deleteUser(username: str, password: str):
         messagebox.showerror(
             "Failed", "Username and Password do not match.")
         return False
-    else:
-        messagebox.showerror("Failed", "User does not exist.")
-        return False
+    messagebox.showerror("Failed", "User does not exist.")
+    return False
 
 
 def deleteData(database):
