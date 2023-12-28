@@ -2,7 +2,6 @@ import mysql.connector as mysql
 import json
 import pandas as pd
 from .. import exceptions
-import json
 
 with open("utils/config.json", "r") as f:
     config = json.load(f)

@@ -2,7 +2,6 @@ import mysql.connector as mysql
 import pandas as pd
 import json
 import warnings
-import json
 
 warnings.filterwarnings('ignore')
 with open("utils/config.json", "r") as f:
