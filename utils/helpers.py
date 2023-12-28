@@ -35,8 +35,7 @@ def welcome():
     elif option == 2:
         clear()
         print("Please continue on the window")
-        # AdminLoginGUI(back_func=welcome).mainloop()
-        adminLogger.initLogger()
+        AdminLoginGUI(back_func=welcome).mainloop()
     elif option == 3:
         sys.exit()
 
