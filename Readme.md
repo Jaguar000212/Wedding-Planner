@@ -44,8 +44,8 @@ We are currently working on a Web App with similar functionality. Stay Tuned! �
 
 ## Workflow 🏢
 
-<img align="left" src="https://raw.githubusercontent.com/Wizard-i/Wedding-Planner/main/Workflow.png" alt="Jaguar000212's Github Stats"> 
+<img align="left" src="https://raw.githubusercontent.com/Jaguar000212/Wedding-Planner/main/Workflow.png" alt="Jaguar000212's Github Stats"> 
 
 ---
 
-⭐ From [Jaguar000212](https://www.github.com/wizard-i)
+⭐ From [Jaguar000212](https://www.github.com/Jaguar000212)
